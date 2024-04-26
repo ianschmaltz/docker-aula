@@ -1,10 +1,9 @@
 # Aula Docker
-# Introdução
 
+## Resumo
 Este projeto consiste na criação de contêineres Docker para um ambiente Node.js e um banco de dados MySQL. Os contêineres são configurados com mapeamento de portas, volumes e uma rede Docker. Um servidor Node.js é executado na porta 3000 e se comunica com o banco de dados MySQL. Os dados são exibidos em um front-end acessível pelo endereço localhost:3000.
 
-# Códigos Bash
-
+## Códigos Bash
 ### Contêiner node: 
 docker run -it --rm --name ian-node -v "$PWD:/usr/src/app" -w "/usr/src/app" -p "3000:3000" --network=ian-network node bash -c "npm install && node index"
 
